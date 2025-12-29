@@ -1,0 +1,79 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image:url(../images/tijolos.jpg) ;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 90px;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: 5px solid #ffd700;
+}
+
+.panel{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square{
+    height: 150px;
+    width: 150px;
+    border: 1px solid #000000;
+    background-color: #2aa7c9;
+}
+
+.enemy{
+    background-image: url("../images/Ralph.png");
+    background-size: cover;
+}
+
+.menu-lives {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-time h2:nth-child(2),
+.menu-score h2:nth-child(2) {
+   margin-top: 10px;
+}
+
+ /*////////////////////////////////////////////////////////////////////////////// BOTÃO START ////////////////////////////////////////////////////////////////////////////////*/
+
+ 
+.start-restart-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#start-restart-btn {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.1rem;
+    padding: 15px 35px;
+    background-color: #ffd700;
+    color: #000;
+    border: 5px solid #000;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #000;
+    transition: all 0.2s;
+}
+
+#start-restart-btn:hover {
+    background-color: #ffed4a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 0 #000;
+}
+
+#start-restart-btn:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+}
